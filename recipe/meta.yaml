@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-crewai" %}
-{% set version = "0.39.4" %}
+{% set version = "0.40.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_crewai-{{ version }}.tar.gz
-  sha256: 8eda9f5c3d301288e18619e5502710a76516b13eab7c988100ab695ce9fb92c9
+  sha256: 5419d88e23d67b4dc48085574aeee3a22f13ce9855946bcc1f865fec8905b42a
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.3
+    - opentelemetry-semantic-conventions-ai 0.4.5
 
 test:
   imports:
