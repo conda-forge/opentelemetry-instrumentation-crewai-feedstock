@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-crewai" %}
-{% set version = "0.45.4" %}
+{% set version = "0.45.5" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_crewai-{{ version }}.tar.gz
-  sha256: 4b632e99f73dadb61b5c0abe483470614fc60bf2f61f1883820bbf4be01450f5
+  sha256: 27a023e93fa7b77aacbd4d2f84d5b25b079c50fb5e8fdd22c30636e776856bec
 
 build:
   noarch: python
