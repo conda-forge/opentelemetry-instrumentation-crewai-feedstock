@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-crewai
-  version: "0.63.0"
+  version: "0.63.1"
   python_min: "3.10"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_crewai-${{ version }}.tar.gz
-  sha256: b08f41244d0bddbf686bbf69c6d794d8fbde1acc87d2a1f1f1d7d52cfd76e6b7
+  sha256: f8f9f0c6986432212ac679b0f54069ab1d447e4a89c81f9f200d5e5028be232b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
